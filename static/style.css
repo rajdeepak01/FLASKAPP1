@@ -1,0 +1,197 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Hero section */
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(images/back-image.png);
+    background-position: center;
+    background-size: cover;
+    padding: 10px 10%;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Navigation bar */
+nav {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo */
+.logo {
+    width: 240px;
+}
+
+/* Navigation links */
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 400;
+}
+
+/* Login button */
+.login-btn {
+    text-decoration: none;
+    color: #333;
+    margin-right: 15px;
+    font-weight: 400;
+}
+
+/* General button styles */
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 14px 40px;
+    color: #fff;
+    background-image: linear-gradient(45deg, #df4881, #c430d7);
+    font-size: 14px;
+    border-radius: 30px;
+    border-top-right-radius: 0;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    border-top-right-radius: 30px;
+}
+
+/* Content section */
+.content {
+    margin-top: 10%;
+    max-width: 600px;
+}
+
+/* Heading styles */
+.content h4 {
+    font-size: 70px;
+    color: #222;
+}
+
+.content p {
+    margin: 10px 0 30px;
+    color: #333;
+}
+
+.content .btn {
+    padding: 15px 80px;
+    font-size: 16px;
+}
+
+/* Feature image */
+.feature-img {
+    margin-bottom: 5%;
+    width: 630px;
+    position: absolute;
+    bottom: 0;
+    right: 2%;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    /* Adjust navigation and logo */
+    nav {
+        flex-direction: column;
+    }
+    .logo {
+        width: 180px;
+        margin-bottom: 10px;
+    }
+    nav ul {
+        text-align: center;
+        padding: 0;
+    }
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+    .btn {
+        width: 100%;
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    /* Adjust content */
+    .content h4 {
+        font-size: 50px;
+        text-align: center;
+    }
+    .content p, .content .btn {
+        text-align: center;
+        display: block;
+        width: 100%;
+    }
+
+    /* Adjust feature image */
+    .feature-img {
+        width: 100%;
+        position: static;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Further adjust content for small screens */
+    .content h4 {
+        font-size: 35px;
+    }
+    .content .btn {
+        padding: 10px 30px;
+        font-size: 14px;
+    }
+}
+/* General button styles */
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    color: #fff;
+    background-image: linear-gradient(45deg, #df4881, #c430d7);
+    font-size: 14px;
+    border-radius: 30px;
+    border-top-right-radius: 0;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Hover effect for buttons */
+.btn:hover {
+    background-image: linear-gradient(45deg, #c430d7, #df4881);
+    transform: scale(1.05);
+}
+
+/* Specific style for logout button */
+.logout {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #e74c3c; /* Red background for logout */
+    font-size: 14px;
+    border-radius: 30px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.logout:hover {
+    background-color: #c0392b; /* Darker red on hover */
+    transform: scale(1.05);
+}
+
+/* Align logout button to the right */
+nav .logout-container {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Aligns to the right */
+}

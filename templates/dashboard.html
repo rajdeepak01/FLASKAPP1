@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="../static/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="hero">
+        <nav>
+            <img src="../static/images/logo.png" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">PYQ</a></li>
+                <li><a href="#">Semester</a></li>
+            </ul>
+            <div class="logout-container">
+                <a href="/logout" class="btn logout">Logout</a>
+            </div>
+        </nav>
+        <div class="content">
+            <h4>Welcome {{ user.name }}, to <br>S~Stuffs</h4>
+            <a href="#" class="btn">Join Now</a>
+        </div>
+    </div>
+    <img src="../static/images/pic.png" class="feature-img">
+</body>
+
+</html>
